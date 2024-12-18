@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Javascript functions</title>
+<script type="text/Javascript">
+function calculate()
+{
+    document.f1.t2.value=parseInt(document.f1.t1.value)*(10/100)
+    document.f1.t3.value=parseInt(document.f1.t1.value)-parseInt(document.f1.t2.value)
+}
+
+</script>
+</head>
+<body>
+<form name="f1">
+<h1>Employee Salary Details</h1><hr/>
+<table border="1">
+ <tr><td>Salary:</td><td> <input type="number" min="70000" max="70000" name="t1"> </td> </tr>
+ <tr><td>PF: </td><td><input type="text" name="t2"> </td></tr>
+ <tr><td>Net salary:</td><td> <input type="text" name="t3"> </td></tr>
+ <tr><td><input type="button" name="b1" value="Calculate salary" onclick="calculate()"></td></tr>
+ </table>
+</form>
+</body>
+</html>

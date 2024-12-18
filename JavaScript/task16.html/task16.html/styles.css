@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.magnify {
+    transition: transform 0.3s ease;
+    width: 300px; 
+}
+
+.image-container:hover .magnify {
+    transform: scale(2); 
+    z-index: 10; 
+}

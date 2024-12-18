@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>onfocus and onblur</title>
+<script>
+    function onFocus(a){
+        a.style.color = "red";
+        a.style.backgroundColor="blue";
+    }
+    function onBlur(a){
+        a.style.color = "black";
+        a.style.backgroundColor="white";
+    } 
+</script>
+</head>
+<body>
+    <input type="text" onfocus="onFocus(this)" onblur="onBlur(this)"/>
+</body>
+</html>

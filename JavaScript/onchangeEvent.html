@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event</title>
+</head>
+<body id="body">
+<h1>EVENTS</h1>
+<select onchange ="changeColor(this.value)">
+    <option value="red">red</option>
+    <option value="lightgreen">green</option>
+    <option value="lightblue">lightblue</option>
+</select>
+</body>
+<script type="text/javascript">
+    function changeColor(color){
+        document.getElementById('body').style.background=color;
+    }
+</script>
+</html>

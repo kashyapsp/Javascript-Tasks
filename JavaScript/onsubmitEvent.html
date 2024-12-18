@@ -1,0 +1,22 @@
+<html>
+    <head>
+     <title>Form Events</title>
+     <script language="javascript">
+        function a(){
+            alert("FORM was submitted");
+        }
+        function b(){
+            alert("FORM was reset");
+        }
+        
+     </script>
+    </head>
+    <body>
+        <h1>Form Events</h1>
+        <form onsubmit="a()" onreset="b()">
+         <input type="text">
+         <input type="submit" value="Submit">
+         <input type="reset"  value="Reset">
+         </form>
+    </body>
+</html>
